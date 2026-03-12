@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janik Henz | DevOps & Cloud</title>
+
+<style>
+
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+.container {
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+h1,h2 {
+    color:#38bdf8;
+}
+
+a {
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+header {
+    margin-bottom:40px;
+}
+
+.badge {
+    display:inline-block;
+    background:#1e293b;
+    padding:6px 10px;
+    border-radius:6px;
+    margin:4px;
+    font-size:14px;
+}
+
+.projects {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.project {
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+}
+
+footer {
+    margin-top:40px;
+    font-size:14px;
+    opacity:0.7;
+}
+
+button {
+    background:#38bdf8;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.light {
+    background:#f1f5f9;
+    color:#0f172a;
+}
+
+.light .project {
+    background:#e2e8f0;
+}
+
+.light .badge {
+    background:#cbd5f5;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>Janik Henz</h1>
+<p>Informatik Student | Cloud • DevOps • Infrastructure</p>
+
+<button onclick="toggleTheme()">Toggle Theme ☀️🌙</button>
+
+</header>
+
+<section>
+
+<h2>About</h2>
+
+<p>
+Ich interessiere mich für Cloud Infrastruktur, Automation und Security.
+Ich baue gerne Homelab Systeme mit Kubernetes, Terraform und Ansible.
+</p>
+
+</section>
+
+<section>
+
+<h2>Tech Stack</h2>
+
+<div class="badge">Terraform</div>
+<div class="badge">Ansible</div>
+<div class="badge">Kubernetes</div>
+<div class="badge">Docker</div>
+<div class="badge">Linux</div>
+<div class="badge">AWS</div>
+
+</section>
+
+<section>
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Homelab Kubernetes</h3>
+<p>Self hosted Kubernetes cluster mit Monitoring Stack.</p>
+<a href="#">Repository →</a>
+<a href="">Github-Page →</a>
+</div>
+
+<!-- <div class="project"> -->
+<!-- <h3>IaC Infrastructure</h3> -->
+<!-- <p>Automatisiertes AWS Deployment mit Terraform.</p> -->
+<!-- <a href="#">Repository →</a> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="project"> -->
+<!-- <h3>Ansible Bootstrap</h3> -->
+<!-- <p>Automatisches Provisioning von Servern.</p> -->
+<!-- <a href="#">Repository →</a> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="project"> -->
+<!-- <h3>Monitoring Dashboard</h3> -->
+<!-- <p>Custom Dashboard für Homelab Monitoring.</p> -->
+<!-- <a href="#">Repository →</a> -->
+<!-- </div> -->
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+GitHub:
+<a href="https://github.com/JanikHenz">github.com/JanikHenz</a>
+</p>
+
+</footer>
+
+</div>
+
+<script>
+
+function toggleTheme(){
+    document.body.classList.toggle("light");
+}
+
+</script>
+
+</body>
+</html>
